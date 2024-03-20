@@ -1,4 +1,4 @@
-# Don't change the line below!
+±# Don't change the line below!
 #! oxygen_storefront_id: 1000015801
 
 name: Storefront 1000015801
@@ -14,14 +14,12 @@ jobs:
     timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup node.js
+      - uses: actions/checkout
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           check-latest: true
-
++
       - name: Cache node modules
         id: cache-npm
         uses: actions/cache@v4
